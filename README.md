@@ -219,7 +219,14 @@ console.log("Vibe + AI = Unstoppable! 🚀💀");
 
 <br><br>
 
-[![Spotify](https://novatorem-smasher589.vercel.app/api/spotify)](https://open.spotify.com/user/smasher589)
+### 🎵 Currently Vibing To:
+[![Spotify](https://img.shields.io/badge/Spotify-Now%20Playing-1DB954?style=for-the-badge&logo=spotify&logoColor=white&labelColor=000000)](https://open.spotify.com/user/smasher589)
+
+**🔥 Favorite Coding Genres:**
+- Synthwave 🌈
+- Lo-fi Hip Hop 🎧  
+- Electronic Beats ⚡
+- Cyberpunk Vibes 🤖
 
 </div>
 
@@ -246,9 +253,28 @@ console.log("Vibe + AI = Unstoppable! 🚀💀");
 
 <div align="center">
 
-<img src="https://readme-quotes-api.herokuapp.com/quote?theme=radical&animation=grow_out_in&layout=churchill&font=Audiowide" alt="Quotes" />
+<table>
+<tr>
+<td align="center" width="50%" style="border: 2px solid #FF0080; border-radius: 10px; padding: 20px;">
 
-<br><br>
+### 🔥 **Code Mantras**
+*"Code is poetry in motion"*  
+*"AI amplifies human creativity"*  
+*"Every bug is a learning opportunity"*
+
+</td>
+<td align="center" width="50%" style="border: 2px solid #FFD700; border-radius: 10px; padding: 20px;">
+
+### ⚡ **Warrior Mindset** 
+*"Embrace the challenge"*  
+*"Innovate, don't imitate"*  
+*"Build for the future"*
+
+</td>
+</tr>
+</table>
+
+<br>
 
 ### 🔥 **"Code is my weapon, bugs are my enemies, and perfection is my destination."** 
 ### 💀 **— Smasher589, Code Warrior**

@@ -16,7 +16,7 @@
 </div>
 
 <div align="center">
-  <img width="100%" src="https://github.com/Smasher589/Smasher589/raw/main/assets/divider.gif" />
+  <img width="100%" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </div>
 
 ---
@@ -59,7 +59,7 @@ console.log("Vibe + AI = Unstoppable! 🚀💀");
 <td width="50%">
 
 ### 🤖 Stats de VibeCoding
-- 🎯 **Projets vibed** : ITSM & Gestion d'incidents
+- 🎯 **Projets vibed** : Site Admin Streaming & Simulateur de recherche
 - 🔧 **AI Tools mastered** : Claude, GPT, Copilot
 - 💥 **Spécialité** : AI-Human fusion coding
 - 🏆 **Objectif 2024** : Révolutionner le dev avec l'IA
@@ -68,7 +68,7 @@ console.log("Vibe + AI = Unstoppable! 🚀💀");
 </td>
 <td width="50%">
 
-<img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="100%" alt="Coding Warrior"/>
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" alt="AI Coding Warrior"/>
 
 </td>
 </tr>
@@ -151,7 +151,7 @@ console.log("Vibe + AI = Unstoppable! 🚀💀");
 <tr>
 <td width="50%">
 
-<img src="https://github-readme-stats-smasher589.vercel.app/api?username=Smasher589&show_icons=true&theme=radical&hide_border=true&bg_color=000000&title_color=FF0080&icon_color=FFD700&text_color=ffffff&ring_color=FF0080&fire_color=FF0080&currStreakLabel=ffffff" width="100%" />
+<img src="https://github-readme-stats.vercel.app/api?username=Smasher589&show_icons=true&theme=radical&hide_border=true&bg_color=000000&title_color=FF0080&icon_color=FFD700&text_color=ffffff" width="100%" />
 
 </td>
 <td width="50%">
@@ -186,24 +186,24 @@ console.log("Vibe + AI = Unstoppable! 🚀💀");
 <tr>
 <td width="50%">
 
-### 💥 **Incident Management System**
+### 📺 **Streaming Admin Platform**
 *Status: DOMINATED* 🏆
-- 🔥 Complete ITSM solution
-- ⚡ Bug tracking perfection  
-- 💀 Zero downtime achieved
+- 🔥 Complete streaming management
+- ⚡ Real-time analytics dashboard  
+- 💀 Ultra-responsive interface
 
-[**VIEW DESTRUCTION** →](https://github.com/Smasher589/gestion-incidents)
+[**VIEW DESTRUCTION** →](https://github.com/Smasher589/streaming-admin)
 
 </td>
 <td width="50%">
 
-### 🚀 **Portfolio Crusher** 
+### 🔍 **Search Simulator Engine** 
 *Status: LEGENDARY* 🌟
-- 💥 Next.js powered beast
-- 🎨 Stunning UI/UX domination
-- 📱 Mobile-first destruction
+- 💥 AI-powered search algorithms
+- 🎨 Advanced filtering system
+- 📱 Lightning-fast results
 
-[**WITNESS POWER** →](https://github.com/Smasher589/portfolio)
+[**WITNESS POWER** →](https://github.com/Smasher589/search-simulator)
 
 </td>
 </tr>
@@ -261,7 +261,7 @@ console.log("Vibe + AI = Unstoppable! 🚀💀");
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Smasher589/Smasher589/output/github-contribution-grid-snake-dark.svg" alt="Snake Game"/>
+<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="Snake Game"/>
 
 </div>
 
@@ -280,7 +280,7 @@ console.log("Vibe + AI = Unstoppable! 🚀💀");
 ### ⚡ **STAR MY REPOS IF YOU DARE!** ⚡
 ### 💀 **LET'S CONNECT AND BUILD SOMETHING LEGENDARY!** 💀
 
-<img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="100" alt="Code Warrior"/>
+<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100" alt="AI Code Warrior"/>
 
 </div>
 

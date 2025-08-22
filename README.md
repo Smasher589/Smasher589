@@ -1,186 +1,503 @@
-# 👋 Salut, je suis Nathan Begue !
-
-<div align="center">
-
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=667EEA&center=true&vCenter=true&multiline=true&width=600&height=100&lines=D%C3%A9veloppeur+Full+Stack;Passionn%C3%A9+de+Tech;Toujours+pr%C3%AAt+%C3%A0+apprendre+%F0%9F%9A%80)
-
-[![GitHub followers](https://img.shields.io/github/followers/nathanbegue?style=for-the-badge&logo=github&logoColor=white&color=667EEA)](https://github.com/nathanbegue)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white&color=0077B5)](https://linkedin.com/in/nathan-begue)
-
-</div>
-
----
-
-## 🚀 À propos de moi
-
-```typescript
-const nathan = {
-  nom: "Nathan Begue",
-  localisation: "France 🇫🇷",
-  role: "Développeur Full Stack",
-  passion: ["Code", "Innovation", "Apprentissage"],
-  objectif: "Créer des solutions qui font la différence"
-};
-```
-
-<img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
-
-- 🔭 Je travaille actuellement sur des projets **ITSM** et **gestion d'incidents**
-- 🌱 J'apprends constamment de nouvelles technologies
-- 💡 J'adore résoudre des problèmes complexes
-- 🎯 Objectif 2024: Contribuer à plus de projets open source
-- ⚡ Fun fact: Je peux déboguer du code en buvant du café ☕
-
-<br clear="right"/>
-
----
-
-## 🛠️ Technologies & Outils
-
-<div align="center">
-
-### Langages de programmation
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-
-### Frontend
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
-
-### Backend
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
-![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-
-### Bases de données
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-
-### Outils & DevOps
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-</div>
-
----
-
-## 📊 Statistiques GitHub
-
-<div align="center">
-
-<img width="400" src="https://github-readme-stats.vercel.app/api?username=nathanbegue&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=667EEA&icon_color=667EEA&text_color=ffffff" />
-
-<img width="400" src="https://github-readme-streak-stats.herokuapp.com/?user=nathanbegue&theme=radical&hide_border=true&background=0D1117&stroke=667EEA&ring=667EEA&fire=667EEA&currStreakLabel=ffffff" />
-
-</div>
-
-<div align="center">
-<img width="600" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nathanbegue&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=667EEA&text_color=ffffff" />
-</div>
-
----
-
-## 🏆 Trophées GitHub
-
-<div align="center">
-
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=nathanbegue&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=2&column=4)
-
-</div>
-
----
-
-## 🔥 Contribution Activity
-
-<div align="center">
-
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=nathanbegue&theme=radical&hide_border=true&bg_color=0D1117&color=667EEA&line=667EEA&point=FFFFFF)
-
-</div>
-
----
-
-## 📚 Projets récents
-
-<div align="center">
-
-[![Projet 1](https://github-readme-stats.vercel.app/api/pin/?username=nathanbegue&repo=gestion-incidents&theme=radical&hide_border=true&bg_color=0D1117&title_color=667EEA&text_color=ffffff)](https://github.com/nathanbegue/gestion-incidents)
-[![Projet 2](https://github-readme-stats.vercel.app/api/pin/?username=nathanbegue&repo=portfolio&theme=radical&hide_border=true&bg_color=0D1117&title_color=667EEA&text_color=ffffff)](https://github.com/nathanbegue/portfolio)
-
-</div>
-
----
-
-## 🎵 Ce que j'écoute en codant
-
-<div align="center">
-
-[![Spotify](https://spotify-now-playing-nathanbegue.vercel.app/api/spotify-playing)](https://open.spotify.com/user/nathanbegue)
-
-</div>
-
----
-
-## 📫 Contact & Réseaux
-
-<div align="center">
-
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nathan.begue@email.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nathan-begue)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/nathanbegue)
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/nathanbegue)
-
-</div>
-
----
-
-## ✨ Citation inspirante
-
-<div align="center">
-
-> *"Le code est comme la poésie : il doit être élégant, expressif et résoudre des problèmes."*
->
-> — Nathan Begue
-
-</div>
-
----
-
-## 🐍 Animation Snake
-
-<div align="center">
-
-![Snake animation](https://github.com/nathanbegue/nathanbegue/blob/output/github-contribution-grid-snake.svg)
-
-</div>
-
----
-
-<div align="center">
-
-### 💖 Merci de visiter mon profil !
-
-![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=nathanbegue.nathanbegue&left_color=667EEA&right_color=764BA2&left_text=Visiteurs)
-
-**⭐ N'hésitez pas à star mes repos si vous les trouvez utiles !**
-
-<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>J'adore me connecter avec des personnes différentes</b> alors si tu veux dire <b>salut, je serai heureux de te rencontrer plus!</b> :)</em>
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&text=Happy%20Coding!&fontSize=40&fontColor=ffffff&animation=twinkling"/>
-</div>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Incidents - Présentation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #2c3e50;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 40px 0 20px 0;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+            border-left: 5px solid #667eea;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        h3 {
+            color: #34495e;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .group-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .group-info h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .group-info p {
+            font-size: 1.1rem;
+            margin: 0;
+            font-weight: 500;
+        }
+        
+        .matrix-container, .workflow-container, .funnel-container {
+            text-align: center;
+            margin: 40px 0;
+            background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e8ecff;
+        }
+        
+        .priority-matrix {
+            display: inline-block;
+            border-collapse: separate;
+            border-spacing: 2px;
+            margin: 20px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .priority-matrix th, .priority-matrix td {
+            padding: 18px 24px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+        }
+        
+        .priority-matrix th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .p1 { 
+            background: linear-gradient(135deg, #ff416c 0%, #ff4757 100%); 
+            color: white; 
+            box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+        }
+        .p2 { 
+            background: linear-gradient(135deg, #ff9500 0%, #ff6b35 100%); 
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 149, 0, 0.3);
+        }
+        .p3 { 
+            background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);
+            color: #2c3e50;
+            box-shadow: 0 4px 15px rgba(254, 202, 87, 0.3);
+        }
+        .p4 { 
+            background: linear-gradient(135deg, #48dbfb 0%, #0abde3 100%); 
+            color: white;
+            box-shadow: 0 4px 15px rgba(72, 219, 251, 0.3);
+        }
+        
+        .workflow-step {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 20px 30px;
+            margin: 15px auto;
+            max-width: 500px;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .workflow-step:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        }
+        
+        .arrow {
+            font-size: 28px;
+            color: #667eea;
+            margin: 15px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .funnel-level {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50px;
+            padding: 18px 25px;
+            margin: 12px auto;
+            font-weight: 600;
+            position: relative;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .funnel-level:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.3);
+        }
+        
+        .level1 { width: 90%; background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); }
+        .level2 { width: 85%; background: linear-gradient(135deg, #ff9500 0%, #ff6348 100%); }
+        .level3 { width: 80%; background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%); }
+        .level4 { width: 75%; background: linear-gradient(135deg, #48dbfb 0%, #0abde3 100%); }
+        .level5 { width: 70%; background: linear-gradient(135deg, #1dd1a1 0%, #10ac84 100%); }
+        .level6 { width: 65%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .level7 { width: 60%; background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); }
+        .level8 { width: 55%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .level9 { width: 50%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        
+        ul {
+            background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+            padding: 25px 30px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            color: #34495e;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        li::before {
+            content: '•';
+            color: #667eea;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
+            padding: 25px;
+            border-left: 5px solid #f39c12;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(243, 156, 18, 0.1);
+        }
+        
+        .example-box {
+            background: linear-gradient(135deg, #e8f4ff 0%, #d1ecf1 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 5px 20px rgba(52, 152, 219, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .example-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.15);
+        }
+        
+        .example-box h3 {
+            color: #2980b9;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        p {
+            font-size: 1.05rem;
+            color: #34495e;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        ol {
+            counter-reset: item;
+            padding-left: 0;
+        }
+        
+        ol li {
+            counter-increment: item;
+            margin-bottom: 15px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        ol li::before {
+            content: counter(item);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 25px;
+                border-radius: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+                padding: 12px 15px;
+            }
+            
+            .priority-matrix th, .priority-matrix td {
+                padding: 12px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .workflow-step {
+                padding: 15px 20px;
+                font-size: 0.9rem;
+                max-width: 90%;
+            }
+            
+            .matrix-container, .workflow-container, .funnel-container {
+                padding: 20px;
+                margin: 25px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GESTION DES INCIDENTS</h1>
+        
+        <div class="group-info">
+            <h3>GROUPE :</h3>
+            <p><strong>Matys Miranville • Jean Edmond • David Dalele • Nathan Begue</strong></p>
+        </div>
+
+        <h2>1. Problématique Actuelle</h2>
+        <div class="highlight">
+            <p><strong>Aujourd'hui :</strong> Aucun outil de suivi → perte de temps, informations dispersées, pas de traçabilité</p>
+        </div>
+        <p><strong>Conséquences :</strong></p>
+        <ul>
+            <li>Impossible de mesurer la charge réelle (40 incidents/jour)</li>
+            <li>Risque de perte de savoir (incidents non documentés)</li>
+            <li>Pas de statistiques fiables pour améliorer le service</li>
+            <li>Insatisfaction des utilisateurs → baisse de productivité</li>
+        </ul>
+        <p><strong>Solution :</strong> Mise en place d'un outil ITSM type GLPI ou WHD (Web Help Desk)</p>
+
+        <h2>2. Critères de l'Outil ITSM</h2>
+        <ul>
+            <li>Enregistrement automatique et manuel des incidents</li>
+            <li>Attribution automatique selon la catégorie/compétence</li>
+            <li>Suivi du cycle de vie : création → résolution → clôture</li>
+            <li>Gestion des priorités</li>
+            <li>Tableaux de bord et reporting</li>
+            <li>Base de connaissances intégrée</li>
+            <li>Interface simple pour les utilisateurs</li>
+            <li>Intégration avec Active Directory</li>
+        </ul>
+
+        <h2>3. Matrice Impact × Urgence</h2>
+        <div class="matrix-container">
+            <table class="priority-matrix">
+                <tr>
+                    <th></th>
+                    <th>Faible</th>
+                    <th>Moyen</th>
+                    <th>Élevé</th>
+                    <th>Critique</th>
+                </tr>
+                <tr>
+                    <th>Critique</th>
+                    <td class="p2">P2</td>
+                    <td class="p1">P1</td>
+                    <td class="p1">P1</td>
+                    <td class="p1">P1</td>
+                </tr>
+                <tr>
+                    <th>Élevée</th>
+                    <td class="p2">P2</td>
+                    <td class="p2">P2</td>
+                    <td class="p1">P1</td>
+                    <td class="p1">P1</td>
+                </tr>
+                <tr>
+                    <th>Moyenne</th>
+                    <td class="p3">P3</td>
+                    <td class="p2">P2</td>
+                    <td class="p2">P2</td>
+                    <td class="p1">P1</td>
+                </tr>
+                <tr>
+                    <th>Faible</th>
+                    <td class="p4">P4</td>
+                    <td class="p3">P3</td>
+                    <td class="p2">P2</td>
+                    <td class="p1">P1</td>
+                </tr>
+            </table>
+            <p><em>Axe vertical : Urgence | Axe horizontal : Impact</em></p>
+        </div>
+
+        <h2>4. Processus de Traitement (Workflow)</h2>
+        <div class="workflow-container">
+            <div class="workflow-step">Enregistrement de l'incident</div>
+            <div class="arrow">↓</div>
+            <div class="workflow-step">Catégoriser l'incident</div>
+            <div class="arrow">↓</div>
+            <div class="workflow-step">Prioriser selon l'impact/l'incident</div>
+            <div class="arrow">↓</div>
+            <div class="workflow-step">Affecter au Agent de l'équipe informatique</div>
+            <div class="arrow">↓</div>
+            <div class="workflow-step">Diagnostique Initial</div>
+            <div class="arrow">↓</div>
+            <div class="workflow-step">Escalade si besoins</div>
+            <div class="arrow">↓</div>
+            <div class="workflow-step">Résolution de l'incident</div>
+            <div class="arrow">↓</div>
+            <div class="workflow-step">Validation côté client/utilisateur</div>
+            <div class="arrow">↓</div>
+            <div class="workflow-step">Clôture & Documentation</div>
+        </div>
+
+        <h2>5. Processus en Entonnoir</h2>
+        <div class="funnel-container">
+            <div class="funnel-level level1">1. Enregistrement de l'incident</div>
+            <div class="funnel-level level2">2. Catégorisation</div>
+            <div class="funnel-level level3">3. Priorisation</div>
+            <div class="funnel-level level4">4. Affectation</div>
+            <div class="funnel-level level5">5. Diagnostic initial</div>
+            <div class="funnel-level level6">6. Escalade si nécessaire</div>
+            <div class="funnel-level level7">7. Résolution</div>
+            <div class="funnel-level level8">8. Validation utilisateur</div>
+            <div class="funnel-level level9">9. Clôture & Documentation</div>
+        </div>
+
+        <h2>6. Exemples de Priorités</h2>
+        <div class="example-box">
+            <h3>Priorité 1 (Critique)</h3>
+            <p>Base de données de paie en panne la veille des salaires</p>
+        </div>
+        <div class="example-box">
+            <h3>Priorité 2 (Haute)</h3>
+            <p>Équipe comptabilité bloquée en clôture mensuelle</p>
+        </div>
+        <div class="example-box">
+            <h3>Priorité 3 (Moyenne)</h3>
+            <p>Problème mail urgent pour un rapport</p>
+        </div>
+        <div class="example-box">
+            <h3>Priorité 4 (Basse)</h3>
+            <p>Demande d'installation logiciel non urgent</p>
+        </div>
+
+        <h2>7. Indicateurs de Qualité</h2>
+        <ul>
+            <li>Nombre d'incidents enregistrés/résolus/en attente</li>
+            <li>Temps moyen de réponse</li>
+            <li>Temps moyen de résolution</li>
+            <li>Pourcentage d'incidents résolus au premier niveau</li>
+            <li>Nombre d'incidents résolus dans les délais</li>
+            <li>Satisfaction utilisateurs</li>
+        </ul>
+
+        <h2>8. Exemple Concret</h2>
+        <div class="example-box">
+            <h3>Scénario : Utilisateur RH ne peut pas accéder à l'application de paie</h3>
+            <ol>
+                <li><strong>Enregistrement :</strong> Via portail (catégorie Application RH)</li>
+                <li><strong>Catégorisation :</strong> Application métiers / Ressources Humaines</li>
+                <li><strong>Priorisation :</strong> Impact fort + Urgence forte → Priorité 1</li>
+                <li><strong>Affectation :</strong> Équipe support applicatif RH</li>
+                <li><strong>Diagnostic :</strong> Problème de connexion DB</li>
+                <li><strong>Escalade :</strong> Vers DBA</li>
+                <li><strong>Résolution :</strong> Redémarrage service DB</li>
+                <li><strong>Validation :</strong> Avec l'utilisateur</li>
+                <li><strong>Clôture :</strong> Documentation dans base de connaissances</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

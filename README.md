@@ -1,503 +1,289 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion des Incidents - Présentation</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #2c3e50;
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-            margin-top: 40px;
-            margin-bottom: 40px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #f5576c);
-        }
-        
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        h1::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            border-radius: 2px;
-        }
-        
-        h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #2c3e50;
-            margin: 40px 0 20px 0;
-            padding: 15px 20px;
-            background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
-            border-left: 5px solid #667eea;
-            border-radius: 10px;
-            position: relative;
-        }
-        
-        h3 {
-            color: #34495e;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .group-info {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-        }
-        
-        .group-info h3 {
-            color: white;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-        
-        .group-info p {
-            font-size: 1.1rem;
-            margin: 0;
-            font-weight: 500;
-        }
-        
-        .matrix-container, .workflow-container, .funnel-container {
-            text-align: center;
-            margin: 40px 0;
-            background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-            border: 1px solid #e8ecff;
-        }
-        
-        .priority-matrix {
-            display: inline-block;
-            border-collapse: separate;
-            border-spacing: 2px;
-            margin: 20px auto;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .priority-matrix th, .priority-matrix td {
-            padding: 18px 24px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 0.95rem;
-            border: none;
-        }
-        
-        .priority-matrix th {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .p1 { 
-            background: linear-gradient(135deg, #ff416c 0%, #ff4757 100%); 
-            color: white; 
-            box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
-        }
-        .p2 { 
-            background: linear-gradient(135deg, #ff9500 0%, #ff6b35 100%); 
-            color: white;
-            box-shadow: 0 4px 15px rgba(255, 149, 0, 0.3);
-        }
-        .p3 { 
-            background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);
-            color: #2c3e50;
-            box-shadow: 0 4px 15px rgba(254, 202, 87, 0.3);
-        }
-        .p4 { 
-            background: linear-gradient(135deg, #48dbfb 0%, #0abde3 100%); 
-            color: white;
-            box-shadow: 0 4px 15px rgba(72, 219, 251, 0.3);
-        }
-        
-        .workflow-step {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 50px;
-            padding: 20px 30px;
-            margin: 15px auto;
-            max-width: 500px;
-            font-weight: 600;
-            font-size: 1rem;
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .workflow-step:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
-        }
-        
-        .arrow {
-            font-size: 28px;
-            color: #667eea;
-            margin: 15px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .funnel-level {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50px;
-            padding: 18px 25px;
-            margin: 12px auto;
-            font-weight: 600;
-            position: relative;
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
-            transition: all 0.3s ease;
-        }
-        
-        .funnel-level:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.3);
-        }
-        
-        .level1 { width: 90%; background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); }
-        .level2 { width: 85%; background: linear-gradient(135deg, #ff9500 0%, #ff6348 100%); }
-        .level3 { width: 80%; background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%); }
-        .level4 { width: 75%; background: linear-gradient(135deg, #48dbfb 0%, #0abde3 100%); }
-        .level5 { width: 70%; background: linear-gradient(135deg, #1dd1a1 0%, #10ac84 100%); }
-        .level6 { width: 65%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        .level7 { width: 60%; background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); }
-        .level8 { width: 55%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-        .level9 { width: 50%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-        
-        ul {
-            background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
-            padding: 25px 30px;
-            border-radius: 15px;
-            border-left: 5px solid #667eea;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-        }
-        
-        li {
-            margin-bottom: 12px;
-            font-size: 1.05rem;
-            color: #34495e;
-            position: relative;
-            padding-left: 20px;
-        }
-        
-        li::before {
-            content: '•';
-            color: #667eea;
-            font-size: 1.2rem;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        
-        .highlight {
-            background: linear-gradient(135deg, #fff9e6 0%, #fff3cd 100%);
-            padding: 25px;
-            border-left: 5px solid #f39c12;
-            border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: 0 5px 20px rgba(243, 156, 18, 0.1);
-        }
-        
-        .example-box {
-            background: linear-gradient(135deg, #e8f4ff 0%, #d1ecf1 100%);
-            padding: 25px;
-            border-radius: 15px;
-            margin: 20px 0;
-            border-left: 5px solid #3498db;
-            box-shadow: 0 5px 20px rgba(52, 152, 219, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .example-box:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.15);
-        }
-        
-        .example-box h3 {
-            color: #2980b9;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-        
-        p {
-            font-size: 1.05rem;
-            color: #34495e;
-            line-height: 1.7;
-            margin-bottom: 15px;
-        }
-        
-        strong {
-            color: #2c3e50;
-            font-weight: 600;
-        }
-        
-        ol {
-            counter-reset: item;
-            padding-left: 0;
-        }
-        
-        ol li {
-            counter-increment: item;
-            margin-bottom: 15px;
-            padding-left: 40px;
-            position: relative;
-        }
-        
-        ol li::before {
-            content: counter(item);
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50%;
-            width: 25px;
-            height: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            left: 0;
-            top: 2px;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px;
-                padding: 25px;
-                border-radius: 15px;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-                padding: 12px 15px;
-            }
-            
-            .priority-matrix th, .priority-matrix td {
-                padding: 12px 16px;
-                font-size: 0.85rem;
-            }
-            
-            .workflow-step {
-                padding: 15px 20px;
-                font-size: 0.9rem;
-                max-width: 90%;
-            }
-            
-            .matrix-container, .workflow-container, .funnel-container {
-                padding: 20px;
-                margin: 25px 0;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>GESTION DES INCIDENTS</h1>
-        
-        <div class="group-info">
-            <h3>GROUPE :</h3>
-            <p><strong>Matys Miranville • Jean Edmond • David Dalele • Nathan Begue</strong></p>
-        </div>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=200&section=header&text=Smasher589&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=30&desc=Code%20Crusher%20%7C%20Bug%20Destroyer%20%7C%20Innovation%20Maker&descAlignY=50&descSize=20"/>
+</div>
 
-        <h2>1. Problématique Actuelle</h2>
-        <div class="highlight">
-            <p><strong>Aujourd'hui :</strong> Aucun outil de suivi → perte de temps, informations dispersées, pas de traçabilité</p>
-        </div>
-        <p><strong>Conséquences :</strong></p>
-        <ul>
-            <li>Impossible de mesurer la charge réelle (40 incidents/jour)</li>
-            <li>Risque de perte de savoir (incidents non documentés)</li>
-            <li>Pas de statistiques fiables pour améliorer le service</li>
-            <li>Insatisfaction des utilisateurs → baisse de productivité</li>
-        </ul>
-        <p><strong>Solution :</strong> Mise en place d'un outil ITSM type GLPI ou WHD (Web Help Desk)</p>
+<div align="center">
 
-        <h2>2. Critères de l'Outil ITSM</h2>
-        <ul>
-            <li>Enregistrement automatique et manuel des incidents</li>
-            <li>Attribution automatique selon la catégorie/compétence</li>
-            <li>Suivi du cycle de vie : création → résolution → clôture</li>
-            <li>Gestion des priorités</li>
-            <li>Tableaux de bord et reporting</li>
-            <li>Base de connaissances intégrée</li>
-            <li>Interface simple pour les utilisateurs</li>
-            <li>Intégration avec Active Directory</li>
-        </ul>
+# 💀⚡ Bienvenue dans ma zone de combat code ! ⚡💀
 
-        <h2>3. Matrice Impact × Urgence</h2>
-        <div class="matrix-container">
-            <table class="priority-matrix">
-                <tr>
-                    <th></th>
-                    <th>Faible</th>
-                    <th>Moyen</th>
-                    <th>Élevé</th>
-                    <th>Critique</th>
-                </tr>
-                <tr>
-                    <th>Critique</th>
-                    <td class="p2">P2</td>
-                    <td class="p1">P1</td>
-                    <td class="p1">P1</td>
-                    <td class="p1">P1</td>
-                </tr>
-                <tr>
-                    <th>Élevée</th>
-                    <td class="p2">P2</td>
-                    <td class="p2">P2</td>
-                    <td class="p1">P1</td>
-                    <td class="p1">P1</td>
-                </tr>
-                <tr>
-                    <th>Moyenne</th>
-                    <td class="p3">P3</td>
-                    <td class="p2">P2</td>
-                    <td class="p2">P2</td>
-                    <td class="p1">P1</td>
-                </tr>
-                <tr>
-                    <th>Faible</th>
-                    <td class="p4">P4</td>
-                    <td class="p3">P3</td>
-                    <td class="p2">P2</td>
-                    <td class="p1">P1</td>
-                </tr>
-            </table>
-            <p><em>Axe vertical : Urgence | Axe horizontal : Impact</em></p>
-        </div>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&duration=2000&pause=800&color=FF0080&center=true&vCenter=true&multiline=true&width=800&height=120&lines=%F0%9F%94%A5+Code+Warrior+%F0%9F%94%A5;%F0%9F%A4%96+AI-Powered+Vibe+Coder+%F0%9F%A4%96;%F0%9F%92%80+Bug+Terminator+%F0%9F%92%80;%F0%9F%9A%80+Innovation+Machine+%F0%9F%9A%80)](https://git.io/typing-svg)
 
-        <h2>4. Processus de Traitement (Workflow)</h2>
-        <div class="workflow-container">
-            <div class="workflow-step">Enregistrement de l'incident</div>
-            <div class="arrow">↓</div>
-            <div class="workflow-step">Catégoriser l'incident</div>
-            <div class="arrow">↓</div>
-            <div class="workflow-step">Prioriser selon l'impact/l'incident</div>
-            <div class="arrow">↓</div>
-            <div class="workflow-step">Affecter au Agent de l'équipe informatique</div>
-            <div class="arrow">↓</div>
-            <div class="workflow-step">Diagnostique Initial</div>
-            <div class="arrow">↓</div>
-            <div class="workflow-step">Escalade si besoins</div>
-            <div class="arrow">↓</div>
-            <div class="workflow-step">Résolution de l'incident</div>
-            <div class="arrow">↓</div>
-            <div class="workflow-step">Validation côté client/utilisateur</div>
-            <div class="arrow">↓</div>
-            <div class="workflow-step">Clôture & Documentation</div>
-        </div>
+<img src="https://komarev.com/ghpvc/?username=Smasher589&label=Profile%20Views&color=ff0080&style=for-the-badge" alt="Profile Views" />
 
-        <h2>5. Processus en Entonnoir</h2>
-        <div class="funnel-container">
-            <div class="funnel-level level1">1. Enregistrement de l'incident</div>
-            <div class="funnel-level level2">2. Catégorisation</div>
-            <div class="funnel-level level3">3. Priorisation</div>
-            <div class="funnel-level level4">4. Affectation</div>
-            <div class="funnel-level level5">5. Diagnostic initial</div>
-            <div class="funnel-level level6">6. Escalade si nécessaire</div>
-            <div class="funnel-level level7">7. Résolution</div>
-            <div class="funnel-level level8">8. Validation utilisateur</div>
-            <div class="funnel-level level9">9. Clôture & Documentation</div>
-        </div>
+[![GitHub followers](https://img.shields.io/github/followers/Smasher589?style=for-the-badge&logo=github&logoColor=white&color=FF0080&labelColor=000000)](https://github.com/Smasher589?tab=followers)
+[![GitHub stars](https://img.shields.io/github/stars/Smasher589?style=for-the-badge&logo=github&logoColor=white&color=FFD700&labelColor=000000)](https://github.com/Smasher589?tab=repositories)
 
-        <h2>6. Exemples de Priorités</h2>
-        <div class="example-box">
-            <h3>Priorité 1 (Critique)</h3>
-            <p>Base de données de paie en panne la veille des salaires</p>
-        </div>
-        <div class="example-box">
-            <h3>Priorité 2 (Haute)</h3>
-            <p>Équipe comptabilité bloquée en clôture mensuelle</p>
-        </div>
-        <div class="example-box">
-            <h3>Priorité 3 (Moyenne)</h3>
-            <p>Problème mail urgent pour un rapport</p>
-        </div>
-        <div class="example-box">
-            <h3>Priorité 4 (Basse)</h3>
-            <p>Demande d'installation logiciel non urgent</p>
-        </div>
+</div>
 
-        <h2>7. Indicateurs de Qualité</h2>
-        <ul>
-            <li>Nombre d'incidents enregistrés/résolus/en attente</li>
-            <li>Temps moyen de réponse</li>
-            <li>Temps moyen de résolution</li>
-            <li>Pourcentage d'incidents résolus au premier niveau</li>
-            <li>Nombre d'incidents résolus dans les délais</li>
-            <li>Satisfaction utilisateurs</li>
-        </ul>
+<div align="center">
+  <img width="100%" src="https://github.com/Smasher589/Smasher589/raw/main/assets/divider.gif" />
+</div>
 
-        <h2>8. Exemple Concret</h2>
-        <div class="example-box">
-            <h3>Scénario : Utilisateur RH ne peut pas accéder à l'application de paie</h3>
-            <ol>
-                <li><strong>Enregistrement :</strong> Via portail (catégorie Application RH)</li>
-                <li><strong>Catégorisation :</strong> Application métiers / Ressources Humaines</li>
-                <li><strong>Priorisation :</strong> Impact fort + Urgence forte → Priorité 1</li>
-                <li><strong>Affectation :</strong> Équipe support applicatif RH</li>
-                <li><strong>Diagnostic :</strong> Problème de connexion DB</li>
-                <li><strong>Escalade :</strong> Vers DBA</li>
-                <li><strong>Résolution :</strong> Redémarrage service DB</li>
-                <li><strong>Validation :</strong> Avec l'utilisateur</li>
-                <li><strong>Clôture :</strong> Documentation dans base de connaissances</li>
-            </ol>
-        </div>
-    </div>
-</body>
-</html>
+---
+
+## 🔥 Profile de Combat
+
+<div align="center">
+
+```javascript
+class Smasher589 extends AIVibeCoderWarrior {
+  constructor() {
+    super();
+    this.username = "Smasher589";
+    this.title = "AI-Powered Vibe Coder 🤖✨";
+    this.location = "France 🇫🇷";
+    this.codingStyle = "VibeCoding with AI assistance";
+    this.aiPartners = ["Claude", "GPT", "Copilot", "Custom AI Tools"];
+    this.vibe = "Chill but deadly efficient 😎";
+    this.mission = "Creating magic through AI-assisted coding";
+  }
+
+  getCurrentVibe() {
+    return {
+      mode: "AI_VIBE_MODE_ACTIVATED 🤖🎵",
+      workflow: "Human creativity + AI superpowers",
+      result: "Pure coding artistry",
+      nextLevel: "Pushing the boundaries of what's possible"
+    };
+  }
+}
+
+const vibeWarrior = new Smasher589();
+console.log("Vibe + AI = Unstoppable! 🚀💀");
+```
+
+</div>
+
+<table align="center">
+<tr>
+<td width="50%">
+
+### 🤖 Stats de VibeCoding
+- 🎯 **Projets vibed** : ITSM & Gestion d'incidents
+- 🔧 **AI Tools mastered** : Claude, GPT, Copilot
+- 💥 **Spécialité** : AI-Human fusion coding
+- 🏆 **Objectif 2024** : Révolutionner le dev avec l'IA
+- ⚡ **Super pouvoir** : Vibe coding à la vitesse de l'éclair
+
+</td>
+<td width="50%">
+
+<img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="100%" alt="Coding Warrior"/>
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Smasher589&bg_color=000000&color=ff0080&line=ff0080&point=ffffff&area=true&hide_border=true" width="100%"/>
+</div>
+
+---
+
+## ⚔️ Arsenal de Destruction
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=js,ts,py,java,cs,react,vue,nodejs,express,mongodb,mysql,postgresql,docker,git,vscode,linux&theme=dark" />
+
+</div>
+
+<details>
+<summary>🔥 <strong>CLICK TO REVEAL MY WEAPONS</strong> 🔥</summary>
+<br>
+
+<div align="center">
+
+### 💀 Langages de Destruction
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=000000" />
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Python-FF0080?style=for-the-badge&logo=python&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white&labelColor=000000" />
+
+### ⚡ Frontend Weapons
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black&labelColor=000000" />
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white&labelColor=000000" />
+
+### 🚀 Backend Arsenal
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white&labelColor=000000" />
+
+### 💾 Database Destroyers
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white&labelColor=000000" />
+
+### 🛠️ DevOps & Tools
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white&labelColor=000000" />
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=000000" />
+
+</div>
+
+</details>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Smasher589&theme=radical" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Smasher589&theme=radical" />
+</div>
+
+---
+
+## 💀 Statistiques de Domination
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=25&duration=3000&pause=1000&color=FF0080&center=true&vCenter=true&width=600&lines=BEAST+MODE%3A+ACTIVATED+%F0%9F%94%A5;BUGS%3A+TERMINATED+%F0%9F%92%80;CODE%3A+DOMINATED+%E2%9A%A1;STATUS%3A+UNSTOPPABLE+%F0%9F%9A%80" alt="Status" />
+
+</div>
+
+<table align="center">
+<tr>
+<td width="50%">
+
+<img src="https://github-readme-stats-smasher589.vercel.app/api?username=Smasher589&show_icons=true&theme=radical&hide_border=true&bg_color=000000&title_color=FF0080&icon_color=FFD700&text_color=ffffff&ring_color=FF0080&fire_color=FF0080&currStreakLabel=ffffff" width="100%" />
+
+</td>
+<td width="50%">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Smasher589&theme=radical&hide_border=true&background=000000&stroke=FF0080&ring=FF0080&fire=FF0080&currStreakLabel=ffffff&sideNums=ffffff&currStreakNum=FFD700&sideLabels=ffffff" width="100%" />
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Smasher589&layout=donut&theme=radical&hide_border=true&bg_color=000000&title_color=FF0080&text_color=ffffff&langs_count=8" width="40%" />
+
+</div>
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=Smasher589&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=2&column=4&title_color=FF0080&text_color=ffffff&icon_color=FFD700" width="100%" />
+</div>
+
+---
+
+## 🎯 Projets de Destruction
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=2000&pause=500&color=FFD700&center=true&vCenter=true&width=500&lines=RECENT+PROJECTS+SMASHED+%F0%9F%92%A5;MORE+DESTRUCTION+COMING+SOON+%E2%9A%A1" alt="Projects" />
+
+</div>
+
+<table align="center">
+<tr>
+<td width="50%">
+
+### 💥 **Incident Management System**
+*Status: DOMINATED* 🏆
+- 🔥 Complete ITSM solution
+- ⚡ Bug tracking perfection  
+- 💀 Zero downtime achieved
+
+[**VIEW DESTRUCTION** →](https://github.com/Smasher589/gestion-incidents)
+
+</td>
+<td width="50%">
+
+### 🚀 **Portfolio Crusher** 
+*Status: LEGENDARY* 🌟
+- 💥 Next.js powered beast
+- 🎨 Stunning UI/UX domination
+- 📱 Mobile-first destruction
+
+[**WITNESS POWER** →](https://github.com/Smasher589/portfolio)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎧 Battle Soundtrack
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=18&duration=4000&pause=1000&color=FF0080&center=true&vCenter=true&width=400&lines=CODING+TO+THE+RHYTHM+%F0%9F%8E%B5;BEATS+THAT+FUEL+THE+CODE+%F0%9F%94%A5" alt="Music" />
+
+<br><br>
+
+[![Spotify](https://novatorem-smasher589.vercel.app/api/spotify)](https://open.spotify.com/user/smasher589)
+
+</div>
+
+---
+
+## 💬 Zone de Contact
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=22&duration=3000&pause=1000&color=FF0080&center=true&vCenter=true&width=500&lines=READY+TO+COLLABORATE%3F+%F0%9F%A4%9D;LET'S+BUILD+SOMETHING+EPIC+%F0%9F%9A%80" alt="Contact" />
+
+<br><br>
+
+[![Email](https://img.shields.io/badge/Gmail-SMASH%20MY%20INBOX-FF0080?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000)](mailto:smasher589@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-PROFESSIONAL%20NETWORK-FF0080?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000)](https://linkedin.com/in/smasher589)
+[![Discord](https://img.shields.io/badge/Discord-CHAT%20WITH%20WARRIOR-FF0080?style=for-the-badge&logo=discord&logoColor=white&labelColor=000000)](https://discord.gg/smasher589)
+[![Twitter](https://img.shields.io/badge/Twitter-FOLLOW%20THE%20JOURNEY-FF0080?style=for-the-badge&logo=twitter&logoColor=white&labelColor=000000)](https://twitter.com/smasher589)
+
+</div>
+
+---
+
+## 💭 Philosophy of a Code Warrior
+
+<div align="center">
+
+<img src="https://readme-quotes-api.herokuapp.com/quote?theme=radical&animation=grow_out_in&layout=churchill&font=Audiowide" alt="Quotes" />
+
+<br><br>
+
+### 🔥 **"Code is my weapon, bugs are my enemies, and perfection is my destination."** 
+### 💀 **— Smasher589, Code Warrior**
+
+</div>
+
+---
+
+## 🐍 Contribution Snake - Watch it DEVOUR!
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Smasher589/Smasher589/output/github-contribution-grid-snake-dark.svg" alt="Snake Game"/>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&duration=2000&pause=1000&color=FFD700&center=true&vCenter=true&width=600&lines=THANKS+FOR+VISITING+%F0%9F%91%8B;READY+TO+SMASH+SOME+CODE%3F+%F0%9F%92%A5" alt="Thanks" />
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=Smasher589&label=WARRIORS%20VISITED&color=ff0080&style=for-the-badge&labelColor=000000" alt="Profile Views" />
+
+<br><br>
+
+### ⚡ **STAR MY REPOS IF YOU DARE!** ⚡
+### 💀 **LET'S CONNECT AND BUILD SOMETHING LEGENDARY!** 💀
+
+<img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="100" alt="Code Warrior"/>
+
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=30,20,40,70,80&height=120&section=footer&text=KEEP%20SMASHING!&fontSize=30&fontColor=ffffff&animation=twinkling&fontAlignY=70"/>
+</div>
